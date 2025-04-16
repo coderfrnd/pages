@@ -3,6 +3,7 @@ import Input from '../Common/Input'
 import Button from '../Common/Button'
 import Orcomponent from '../Common/Orcomponent'
 import SocialLogin from '../Common/SocialLogin'
+import { Link } from 'react-router-dom'
 
 const Email = () => {
   return (
@@ -10,8 +11,8 @@ const Email = () => {
 <div className='w-[495px] h-[410px] flex flex-col gap-[40px]'>
   <div className='w-[495px] h-[217px] flex flex-col gap-[15px]'>
   <div className='w-[495px]  flex flex-col gap-[30px]'>
-<Input label={"Email Login"} placeholder={"robert.fox@myemail.com"} />
-<Input label={"Password"} placeholder={"Enter Password"} />
+<Input label={"Email Login"} placeholder={"robert.fox@myemail.com"} type="text" />
+<Input label={"Password"} placeholder={"Enter Password"} type="password" />
 </div>
 <div className="flex justify-between items-center w-full">
   <label className="flex items-center gap-2 cursor-pointer">
@@ -22,7 +23,9 @@ const Email = () => {
 </div>
   </div>
   <div className='w-[495px] h-[153px] flex flex-col gap-[20px]' >
-  <Button props={"Login"}/>
+    <Link to='/dashboard'>
+    <Button props={"Login"}/>
+    </Link>
   <div className='h-[83px] flex flex-col gap-[15px]'>
     <Orcomponent/>
    <SocialLogin/>

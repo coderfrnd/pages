@@ -26,7 +26,7 @@ const Login = () => {
       <DottedWave />
       <div className="relative z-10 w-full flex flex-col items-center">
         <Header props={'Login'} />
-        <div className="w-full max-w-[695px] min-h-[550px] bg-white rounded-lg shadow-md flex flex-col items-center py-8 px-4 sm:px-8 md:px-12 lg:px-16 gap-8 mt-8">
+        <div className="w-full max-w-[695px] min-h-[550px] bg-white rounded-lg shadow-md flex flex-col items-center py-12 px-4 sm:px-8 md:px-12 lg:px-16 gap-8 mt-6">
           <GenrateLink />
           <Email />
           <div className="flex items-center gap-2 font-[inter] text-base sm:text-lg font-normal tracking-normal">
