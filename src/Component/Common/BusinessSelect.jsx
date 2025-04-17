@@ -1,6 +1,6 @@
 import React from 'react';
 import BusinessTag from './BusinessTag';
-import dropdownIcon from '../../Assets/dropdown.png';
+import dropdownIcon from '/Assets/dropdown.png';
 
 const BusinessSelect = ({ label, options = [], placeholder = "Select" }) => {
   return (

@@ -25,20 +25,20 @@ const MenuItem = ({ text, path, icon }) => (
 
 const Sidebar = () => {
   const menuItems = [
-    { text: 'Platform Setup', path: '/platform-setup', icon: '/src/Assets/SidebarIcons/details.png' },
-    { text: 'AI Agent', path: '/ai-agent', icon: '/src/Assets/SidebarIcons/aiAgent.png' },
-    { text: 'Dashboard', path: '/dashboard', icon: '/src/Assets/SidebarIcons/dashboard.png' },
-    { text: 'Campaign', path: '/campaign', icon: '/src/Assets/SidebarIcons/campaign.png' },
-    { text: 'Promoters', path: '/promoters', icon: '/src/Assets/SidebarIcons/pramoters.png' },
-    { text: 'Leads', path: '/leads', icon: '/src/Assets/SidebarIcons/leads.png' },
-    { text: 'Payouts', path: '/payouts', icon: '/src/Assets/SidebarIcons/payout.png' },
+    { text: 'Platform Setup', path: '/platform-setup', icon: '/Assets/SidebarIcons/details.png' },
+    { text: 'AI Agent', path: '/ai-agent', icon: '/Assets/SidebarIcons/aiAgent.png' },
+    { text: 'Dashboard', path: '/dashboard', icon: '/Assets/SidebarIcons/dashboard.png' },
+    { text: 'Campaign', path: '/campaign', icon: '/Assets/SidebarIcons/campaign.png' },
+    { text: 'Promoters', path: '/promoters', icon: '/Assets/SidebarIcons/pramoters.png' },
+    { text: 'Leads', path: '/leads', icon: '/Assets/SidebarIcons/leads.png' },
+    { text: 'Payouts', path: '/payouts', icon: '/Assets/SidebarIcons/payout.png' },
   ];
 
   return (
     <div className="w-[245px] h-[1123px] bg-white   border-[#EFF0F6] rounded-[20px]">
       <div className="relative" style={{ height: '96px' }}>
         <img 
-          src="/src/Assets/logo.png" 
+          src="/Assets/logo.png" 
           alt="Logo" 
           className="absolute"
           style={{
@@ -60,8 +60,8 @@ const Sidebar = () => {
       </div>
       <div className="absolute top-[976px] h-[102px] w-[230px] border-t border-gray-200">
         <ul className="p-4 space-y-1">
-          <MenuItem text="Settings" path="/settings" icon="/src/Assets/SidebarIcons/setting.png" />
-          <MenuItem text="Help" path="/help" icon="/src/Assets/SidebarIcons/help.png" />
+          <MenuItem text="Settings" path="/settings" icon="/Assets/SidebarIcons/setting.png" />
+          <MenuItem text="Help" path="/help" icon="/Assets/SidebarIcons/help.png" />
         </ul>
       </div>
     </div>
