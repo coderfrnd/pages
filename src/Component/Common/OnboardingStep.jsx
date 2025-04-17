@@ -12,11 +12,6 @@ const OnboardingStep = ({ title, status = 'Not Started', onClick }) => {
             status === 'In Progress' ? 'border-blue-500' : 
             'border-gray-300'}`}
         >
-          {/* {status === 'Completed' && (
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          )} */}
         </div>
       </div>
       <div className="w-[178px] h-[42px] flex flex-col gap-[6px]  mt-1">

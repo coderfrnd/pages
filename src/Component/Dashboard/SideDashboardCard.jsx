@@ -27,7 +27,7 @@ const SideDashboardCard = () => {
   };
 
   return (
-    <div className="w-[346px] h-[913px] rounded-[8px] bg-[#F7F9FF] relative p-[30px]">
+    <div className="w-[346px] h-[913px] rounded-[8px] bg-[#F7F9FF] relative p-[30px] top-[25px] left-[25px]">
       {/* Header */}
       <div className="w-[286px] border-b-[1px] border-[#CCCCCC]  pb-[30px] flex flex-col gap-3">
         <h2 className="font-poppins font-medium text-[18px] leading-[100%] tracking-[0px] text-[#305AFF]">
