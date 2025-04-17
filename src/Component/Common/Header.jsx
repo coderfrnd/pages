@@ -23,6 +23,8 @@ const Header = ({ title, userEmail }) => {
           </div>
         </div>
       </div>
+      <div className="w-[350px] h-[39px] absolute top-[839px] left-[162px] rounded-[8px] p-[10px_35px_10px_35px] gap-[10px]">
+      </div>
     </header>
   );
 };

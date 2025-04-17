@@ -29,9 +29,17 @@ const BusinessForm = () => {
         <div className='w-[620px] h-[107px] gap-[20px] flex flex-col relative'>
           <BusinessTag title={'Business Description'} />
           <textarea
-            className="w-[620px] h-[80px] absolute top-[27px] left-0 border-[1px] border-[#E2E8F0] rounded-[7px] resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 pl-[15px]"
-            placeholder="Enter business description..."
-          />
+  className="w-[620px] h-[80px] absolute top-[27px] left-0 border-[1px] border-[#E2E8F0] rounded-[7px] resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 pl-[15px] pt-[16px]
+  placeholder:text-[#B3B3B3]
+  placeholder:font-normal 
+  placeholder:text-[14px] 
+  placeholder:leading-[14px] 
+  placeholder:tracking-[0px] 
+  placeholder:align-middle 
+  font-['Inter']"
+  placeholder="Enter business description..."
+/>
+
         </div>
         <section className="flex w-[620px] h-[77px] gap-[20px]">
           <BusinessInput 

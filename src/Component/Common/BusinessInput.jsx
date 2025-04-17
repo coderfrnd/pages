@@ -7,7 +7,7 @@ const BusinessInput = ({ label, placeholder, type = 'text' }) => {
       <BusinessTag title={label} />
       <input
         type={type}
-        className="w-[300px] h-[50px] absolute top-[27px] pl-[15px] rounded-[7px] border-[1px] border-[#CCCCCC] placeholder:font-normal placeholder:text-[14px] placeholder:leading-[100%] placeholder:tracking-[0%] placeholder:align-middle focus:outline-none focus:ring-2 focus:ring-[#305AFF] focus:border-[#305AFF]"
+        className="w-[300px] h-[50px] absolute top-[27px] pl-[15px] rounded-[7px] border-[1px] border-[#CCCCCC] placeholder:font-normal placeholder:text-[14px] placeholder:leading-[100%] placeholder:text-[#B3B3B3]placeholder:tracking-[0%] placeholder:align-middle focus:outline-none focus:ring-2 focus:ring-[#305AFF] focus:border-[#305AFF]"
         placeholder={placeholder}
         style={{
           // Only placeholder will inherit these through Tailwind

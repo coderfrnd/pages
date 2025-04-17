@@ -7,7 +7,9 @@ const BusinessSelect = ({ label, options = [], placeholder = "Select" }) => {
     <div className="w-[300px] h-[77px] relative rounded-[7px] flex flex-col gap-2">
       <BusinessTag title={label} />
       <select
-        className="w-[300px] h-[50px] absolute top-[27px] pl-[15px] rounded-[7px] border-[1px] border-[#CCCCCC] placeholder:font-normal placeholder:text-[14px] placeholder:leading-[100%] placeholder:tracking-[0%] placeholder:align-middle appearance-none bg-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#305AFF] focus:border-[#305AFF]"
+        className="w-[300px] h-[50px] absolute top-[27px] pl-[15px] text-[#B3B3B3] rounded-[7px] border-[1px] border-[#CCCCCC] placeholder:font-normal placeholder:text-[14px] placeholder:leading-[100%] placeholder:tracking-[0%] placeholder:align-middle appearance-none bg-white cursor-pointer 
+        placeholder:text-[#B3B3B3]
+        focus:outline-none focus:ring-2 focus:ring-[#305AFF] focus:border-[#305AFF]"
         style={{
           fontFamily: 'Inter, sans-serif',
         }}
