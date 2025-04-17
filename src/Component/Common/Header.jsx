@@ -2,10 +2,12 @@ import React from 'react';
 
 const Header = ({ title, userEmail }) => {
   return (
-    <header className="bg-white border-b border-gray-200 flex justify-center items-center" style={{ height: '64px' }}>
-      <div className='w-[1105px] h-[32px] flex justify-between'>
-        <span>Platform Setup</span>
-        <div className='w-[215px] h-[32px] gap-[30px] flex items-center'>
+    <header className="flex items-center fixed top-[35px] left-[296px]">
+      <div className='w-[1105px] mx-auto flex justify-between items-center relative'>
+        <span className="text-[16px] font-medium text-[#101828]">
+          Platform Setup
+        </span>
+        <div className='flex items-center gap-4'>
           <img 
             src="/src/Assets/notification.png" 
             alt="notification" 
@@ -17,7 +19,7 @@ const Header = ({ title, userEmail }) => {
               alt="Profile" 
               className='w-8 h-8 rounded-full'
             />
-            <span className='text-sm text-[#667085]'>kadin.stanton@gmail.com</span>
+            <span className='text-sm text-[#667085]'>kadinstanton@gmail.com</span>
           </div>
         </div>
       </div>
