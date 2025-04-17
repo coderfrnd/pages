@@ -14,6 +14,9 @@ const Dashboard = () => {
         <div className='border-b-[1px] w-[1194px] top-[95px] absolute left-[246px] border-[#E5E5E5]'></div>
         <DashboardCard/>
       </div>
+      <span className='h-[60px] w-[60px] absolute top-[919px] left-[1315px]'>
+        <img src="/Assets/assistant.png" alt="" />
+      </span>
     </div>
   );
 };
