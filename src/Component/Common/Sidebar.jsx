@@ -40,7 +40,7 @@ const Sidebar = () => {
         <img 
           src="/Assets/logo.png" 
           alt="Logo" 
-          className="absolute"
+          className="fixed"
           style={{
             width: '64.75px',
             height: '32px',
