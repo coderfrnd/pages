@@ -9,13 +9,13 @@ const Header = ({ title, userEmail }) => {
         </span>
         <div className='flex items-center gap-4'>
           <img 
-            src="/Assets/notification.png" 
+            src="/Assets/notifications.png" 
             alt="notification" 
             className="w-6 h-6" 
           />
           <div className='flex items-center gap-2'>
             <img 
-              src="/Assets/avatar.png" 
+              src="/Assets/profile.png" 
               alt="Profile" 
               className='w-8 h-8 rounded-full'
             />
