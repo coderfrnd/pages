@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Email = () => {
   return (
 <>
-<div className='w-[495px] h-[410px] flex flex-col gap-[40px]'>
+<div className='w-[495px] h-[410px] flex flex-col gap-[40px]  absolute top-[363px] '>
   <div className='w-[495px] h-[217px] flex flex-col gap-[15px]'>
   <div className='w-[495px]  flex flex-col gap-[30px]'>
 <Input label={"Email Login"} placeholder={"robert.fox@myemail.com"} type="text" />

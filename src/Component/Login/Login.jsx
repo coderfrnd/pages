@@ -22,14 +22,14 @@ const Login = () => {
   }
 
   return (
-    <div className="min-h-screen w-full bg-gray-50 flex flex-col items-center relative overflow-hidden">
+    <div className="min-h-screen w-full bg-gray-50 flex flex-col items-center relative overflow-x-hidden">
       <DottedWave />
-      <div className="relative z-10 w-full flex flex-col items-center">
+      <div className=" z-10 w-full flex flex-col items-center">
         <Header props={'Login'} />
-        <div className="w-full max-w-[695px] min-h-[550px] bg-white rounded-lg shadow-md flex flex-col items-center py-12 px-4 sm:px-8 md:px-12 lg:px-16 gap-8 mt-6">
+        <div className="w-full max-w-[695px] min-h-[898px] bg-white rounded-lg shadow-md flex flex-col items-center absolute top-[205px]">
           <GenrateLink />
           <Email />
-          <div className="flex items-center gap-2 font-[inter] text-base sm:text-lg font-normal tracking-normal">
+          <div className="flex items-center gap-2 font-[inter] text-base sm:text-lg font-normal absolute top-[805px] tracking-normal">
             <span className="text-gray-600">Don't have an account?</span>
             <Link to={'/register'} className="text-[#305AFF] hover:underline">Register now</Link>
           </div>
