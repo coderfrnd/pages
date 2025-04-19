@@ -4,6 +4,7 @@ import BusinessForm from './BusinessComponent/BusinessForm';
 import SecondStep from './BusinessStep/SecondStep';
 import ThirdStep from './BusinessStep/ThirdStep';
 import NextButton from '../Common/NextButton';
+import FouthStep from './BusinessStep/FouthStep';
 
 const BusinessIdentityCard = ({ onStepComplete, currentStep }) => {
   const [step, setStep] = useState(currentStep);
@@ -14,7 +15,7 @@ const BusinessIdentityCard = ({ onStepComplete, currentStep }) => {
   };
 
   return (
-    <div className="w-[674px] h-[788px] rounded-[8px] bg-white p-[30px] absolute top-[25px] left-[401px]">
+    <div className={`w-[674px] ${step === 4 ? 'h-[3051px]' : 'h-[788px]'} rounded-[8px] bg-white  absolute top-[25px] left-[401px]`}>
       {step === 1 ? (
         <>
           <BusinessHeading/>
@@ -26,11 +27,13 @@ const BusinessIdentityCard = ({ onStepComplete, currentStep }) => {
           <SecondStep />
           <NextButton onClick={handleNext} text="Next" top={632} />
         </>
-      ) : (
+      ) : step === 3 ? (
         <>
           <ThirdStep />
-          <NextButton onClick={handleNext} text="Finish" top={632} />
+          <NextButton onClick={handleNext} text="Next" top={632} />
         </>
+      ): (
+        <FouthStep/>
       )}
     </div>
   );

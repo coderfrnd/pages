@@ -23,7 +23,7 @@ const MenuItem = ({ text, path, icon }) => (
   </li>
 );
 
-const Sidebar = () => {
+const Sidebar = ({ isStep4 }) => {
   const menuItems = [
     { text: 'Platform Setup', path: '/platform-setup', icon: '/Assets/SidebarIcons/details.png' },
     { text: 'AI Agent', path: '/ai-agent', icon: '/Assets/SidebarIcons/aiAgent.png' },
@@ -35,12 +35,12 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-[245px] h-[1123px] bg-white   border-[#EFF0F6] rounded-[20px]">
+    <div className={`w-[245px] ${isStep4 ? 'h-[3248px]' : 'h-[1123px]'} bg-white border-[#EFF0F6] rounded-[20px]`}>
       <div className="relative" style={{ height: '96px' }}>
         <img 
           src="/Assets/logo.png" 
           alt="Logo" 
-          className="fixed"
+          className="absolute"
           style={{
             width: '64.75px',
             height: '32px',
@@ -49,7 +49,7 @@ const Sidebar = () => {
           }}
         />
       </div>
-      <div className='w-[246px] h-[367px] fixed top-[123px] gap-[15px]'>
+      <div className='w-[246px] h-[367px] absolute top-[123px] gap-[15px]'>
         <nav className="w-[230px] h-[352px]">
           <ul className="space-y-1">
             {menuItems.map((item, index) => (
@@ -58,7 +58,7 @@ const Sidebar = () => {
           </ul>
         </nav>
       </div>
-      <div className="absolute top-[976px] h-[102px] w-[230px] border-t border-gray-200">
+      <div className={`absolute ${isStep4 ? 'top-[3101px]' : 'top-[976px]'} h-[102px] w-[230px] border-t border-gray-200`}>
         <ul className="p-4 space-y-1">
           <MenuItem text="Settings" path="/settings" icon="/Assets/SidebarIcons/setting.png" />
           <MenuItem text="Help" path="/help" icon="/Assets/SidebarIcons/help.png" />

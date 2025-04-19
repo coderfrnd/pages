@@ -18,8 +18,6 @@ const SecondStep = () => {
 
   return (
     <>
-    
-   
       <div className="w-[529px] h-[24px] absolute top-[93px] left-[73px]">
         <h2 className="w-[529px] h-[24px] font-['Inter'] font-[500] text-[20px] leading-[100%] tracking-[0%] text-center text-[#333333]">
           Import Customer Data: Sync with Zapier or Upload CSV
